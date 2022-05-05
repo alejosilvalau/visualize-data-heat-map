@@ -1,0 +1,81 @@
+body {
+	background-color: silver;
+	background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
+		linear-gradient(155deg, #d00 23px, transparent 23px),
+		linear-gradient(335deg, #b00 23px, transparent 23px),
+		linear-gradient(155deg, #d00 23px, transparent 23px);
+	background-size: 58px 58px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	flex-direction: column;
+	font-family: sans-serif;
+}
+
+.container {
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border: 2px solid black;
+}
+
+.container {
+	position: relative;
+}
+
+.tooltip {
+	background-color: #000;
+	border-radius: 10px;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	display: none;
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.tooltip.show {
+	display: block;
+}
+
+.tooltip p {
+	margin: 5px;
+}
+
+rect:hover {
+	stroke: black;
+}
+
+#legend,
+.container {
+	zoom: 130%;
+}
+
+#legend {
+	background-color: #000;
+	border: 2px solid black;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	margin-top: 30px;
+	padding: 0px;
+}
+
+h1,
+h3 {
+	border-radius: 5px;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+	background-color: #fff;
+	padding: 10px;
+	font-weight: 500;
+}
